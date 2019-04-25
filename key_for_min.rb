@@ -10,7 +10,7 @@ def key_for_min_value(name_hash)
   end
   name_hash.collect do |ind, n|
     if name_hash[ind] == i
-      ind
+      return ind
     end
   end
 end
