@@ -8,9 +8,13 @@ def key_for_min_value(name_hash)
       i = n
     end
   end
-  name_hash.collect do |ind, n|
-    if name_hash[ind] == i
-      return ind
+  if i == 100
+    return nil
+  else
+    name_hash.collect do |ind, n|
+      if name_hash[ind] == i
+        return ind
+      end
     end
   end
 end
